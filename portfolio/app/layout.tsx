@@ -15,7 +15,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className} >
+        <div className=' text-center'> SECTION BAR LAYOUT HERE?</div>
+        <div className="flex justify-between">
+          <div>BLOG</div>
+          <div>ABOUT</div>
+          <div>CONTACT</div>
+          <div>PORTFOLIO</div>
+        </div>
+   
+        <div>{children}</div>
+
+      
+      
+      </body>
     </html>
   )
 }
