@@ -3,20 +3,23 @@ import Image from 'next/image'
 export default function Home() {
   return (
 //sections of the page
-    <div className="container">
+    
+    <div className="bg-gradient-to-r from-slate-50 to-slate-100 h-screen">
+      <div className="h-max-full text-center">
 
       Welcome to Manel Soler Portfolio
+        <div className='flex-col'>
 
-      
-      <div>BLOG</div>
-      <div>ABOUT</div>
-      <div>CONTACT</div>
-      <div>PORTFOLIO</div>
-      <div>PROJECTS</div>
+      <div>BLOG BOX </div>
+      <div>ABOUT BOX </div>
+      <div>CONTACT BOX </div>
+      <div>PORTFOLIO BOX </div>
+      </div>
       
 
 
     
-    </div>
+      </div>
+  </div>
   )
 }

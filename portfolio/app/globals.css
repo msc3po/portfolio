@@ -16,6 +16,8 @@
   }
 }
 
+bg-gradient-to-r from-green-300 via-blue-500 to-purple-600
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -24,4 +26,6 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  @apply bg-gradient-to-r from-green-300 via-blue-500 to-purple-600;
 }
+
