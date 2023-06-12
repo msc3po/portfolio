@@ -1,5 +1,6 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,10 +19,11 @@ export default function RootLayout({
       <body className={inter.className} >
         <div className=' text-center'> SECTION BAR LAYOUT HERE?</div>
         <div className="flex justify-between">
-          <div>BLOG</div>
-          <div>ABOUT</div>
-          <div>CONTACT</div>
-          <div>PORTFOLIO</div>
+          
+          <Link href= '/blog'> BLOG </Link>
+          <Link href="/about" >ABOUT</Link >
+          <Link href="/contact">CONTACT</Link >
+          <Link href= "/portfolio">PORTFOLIO</Link >
         </div>
    
         <div>{children}</div>

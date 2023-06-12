@@ -1,6 +1,6 @@
 
-export default function Portfolio(){
+export default function Contact(){
   return (
-  <div>My PORTFOLIO inf goes here</div>
+  <div>My contact inf goes here</div>
   )
 }
