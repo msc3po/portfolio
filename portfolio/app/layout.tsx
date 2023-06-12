@@ -14,23 +14,30 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const links = [
+    { href: '/', label: 'HOME' },
+    { href: '/blog', label: 'BLOG' },
+    { href: '/about', label: 'ABOUT' },
+    { href: '/contact', label: 'CONTACT' },
+    { href: '/portfolio', label: 'PORTFOLIO' },
+  ]
+
   return (
     <html lang="en">
-      <body className={inter.className} >
-        <div className=' text-center'> </div>
+      <body className={inter.className}>
+        <div className=" text-center"> </div>
         <div className="flex justify-between">
-          
-        <Link href= '/'> HOME </Link>
-          <Link href='/blog'> BLOG </Link>
-          <Link href="/about" >ABOUT</Link >
-          <Link href="/contact">CONTACT</Link >
-          <Link href= "/portfolio">PORTFOLIO</Link >
+          <ul>
+            {links.map(({ href, label }) => (
+              <li key={href}>
+                <Link href={href}>{label}</Link>
+                <a>{label}</a>
+              </li>
+            ))}
+          </ul>
         </div>
-   
-        <div>{children}</div>
 
-      
-      
+        <div>{children}</div>
       </body>
     </html>
   )
