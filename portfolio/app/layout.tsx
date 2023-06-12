@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className} >
-        <div className=' text-center'> SECTION BAR LAYOUT HERE?</div>
+        <div className=' text-center'> </div>
         <div className="flex justify-between">
           
         <Link href= '/'> HOME </Link>
