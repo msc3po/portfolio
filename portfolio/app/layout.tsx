@@ -20,7 +20,8 @@ export default function RootLayout({
         <div className=' text-center'> SECTION BAR LAYOUT HERE?</div>
         <div className="flex justify-between">
           
-          <Link href= '/blog'> BLOG </Link>
+        <Link href= '/'> HOME </Link>
+          <Link href='/blog'> BLOG </Link>
           <Link href="/about" >ABOUT</Link >
           <Link href="/contact">CONTACT</Link >
           <Link href= "/portfolio">PORTFOLIO</Link >
