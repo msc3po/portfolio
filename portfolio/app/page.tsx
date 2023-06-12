@@ -7,7 +7,7 @@ export default function Home() {
     <div className="bg-gradient-to-r from-slate-50 to-slate-100 h-screen">
       <div className="h-max-full text-center">
 
-      Welcome to Manel Soler Portfolio
+      <h1>Welcome to Manel Soler Portfolio</h1>
         <div className='flex-col'>
 
       <div>BLOG BOX </div>
