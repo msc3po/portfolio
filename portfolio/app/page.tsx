@@ -17,9 +17,12 @@ export default function Home() {
         <nav className="items-center grid grid-cols-2 gap-4 mx-auto w-3/4">
           {boxes.map((box, index) => (
             <Link href={box.href}>
-              
-                <Box key={index} title={box.title} content={box.content} />
-              
+              <Box
+                key={index}
+                title={box.title}
+                content={box.content}
+                image={''}
+              />
             </Link>
           ))}
         </nav>
