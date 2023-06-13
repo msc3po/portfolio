@@ -15,7 +15,7 @@ export default function Blog() {
             <div className="col-span-1">
               <Box title={``} content={''} image={urlImage} shape="circle" />
             </div>
-            <div className="col-span-3 text-sm h-[300px] w-full">
+            <div className="col-span-3 text-sm">
               <Box title={``} content={text} image={''} />
             </div>
           </div>
