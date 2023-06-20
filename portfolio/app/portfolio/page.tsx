@@ -4,10 +4,26 @@ import Link from 'next/link'
 
 export default function Portfolio() {
   const projects = [
-    { title: 'title 1', Image: 'https://picsum.photos/200/300', href: '/portfolio/1' }, 
-    { title: 'title 2', Image: 'https://picsum.photos/200/300', href: '/portfolio/2' },
-    { title: 'title 3', Image: 'https://picsum.photos/200/300', href: '/portfolio/3' },
-    { title: 'title 4', Image: 'https://picsum.photos/200/300', href: '/portfolio/4' },
+    {
+      title: 'title 1',
+      Image: 'https://picsum.photos/200/300',
+      href: '/portfolio/1',
+    },
+    {
+      title: 'title 2',
+      Image: 'https://picsum.photos/200/300',
+      href: '/portfolio/2',
+    },
+    {
+      title: 'title 3',
+      Image: 'https://picsum.photos/200/300',
+      href: '/portfolio/3',
+    },
+    {
+      title: 'title 4',
+      Image: 'https://picsum.photos/200/300',
+      href: '/portfolio/4',
+    },
   ]
 
   const titleUrlImage = 'https://picsum.photos/200/300'
@@ -20,15 +36,16 @@ export default function Portfolio() {
           <h2 className="text-lg"> Smart sentence here</h2>{' '}
           <div className="grid grid-cols-4 gap-4 items-center">
             {projects.map((box, index) => (
-            <Link href={box.href}>
-              <Box
-                key={index}
-                title={box.title}
-                image={box.Image}
-                textCentered={true}
-              />
-            </Link>
-          ))}
+              <Link href={box.href}>
+                <Box
+                  key={index}
+                  title={box.title}
+                  image={box.Image}
+                  textCentered={true}
+                  content={''}
+                />
+              </Link>
+            ))}
           </div>
         </div>
       </div>
