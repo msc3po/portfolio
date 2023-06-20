@@ -26,7 +26,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div className="text-center"></div>
-        <nav className="flex justify-between p-4">
+        <nav className="flex justify-between max-w-screen-lg mx-auto p-10 ">
           {links.map(({ href, label }) => (
             <Link key={href} href={href}>
               {label}
