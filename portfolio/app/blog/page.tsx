@@ -1,6 +1,18 @@
+import { getAllPosts } from '@/lib/cms'
+import Link from 'next/link'
 
-export default function Blog(){
+export default async function Blog() {
+  const posts = await getAllPosts
+
   return (
-  <div>My blog goes here</div>
+    <div>
+      {posts.map((post) => (
+        <Link href={`/blog/${post.slug}`}>
+          <div>
+            <h1>{post.title}</h1>
+          </div>
+        </Link>
+      ))}
+    </div>
   )
 }
