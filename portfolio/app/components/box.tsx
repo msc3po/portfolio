@@ -1,7 +1,10 @@
+import { ReactNode } from 'react'
+
 type BoxProps = {
   title: string
   content: string
   image: string
+  children?: ReactNode
   size?: string
   shape?: 'circle' | 'square' | 'rectangle'
   textCentered?: boolean
@@ -11,6 +14,7 @@ export default function Box({
   content,
   image,
   shape = 'square',
+  children,
   textCentered = false,
 }: BoxProps) {
   return (
@@ -30,6 +34,7 @@ export default function Box({
         <div>
           <h1 className="mb-4 text-3xl font-extrabold text-center">{title}</h1>
           <p className="text-center">{content}</p>
+          {children}
         </div>
       </div>
     </div>
