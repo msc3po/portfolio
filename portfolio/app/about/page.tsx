@@ -1,8 +1,22 @@
 import Box from '../components/box'
+import '../About.css' // import CSS file
 
 export default function About() {
-  const text =
-    'Lorem ipLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rhoncus neque a est varius, mattis imperdiet massa imperdiet. Cras interdum sit amet dui nec pretium. Curabitur ante dolor, efficitur eget posuere vitae, tincidunt sed ante. Praesent quis sagittis est. Vestibulum accumsan ipsum at laoreet sodales. Integer gravida nulla eu ligula euismod euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus fringilla leo a tortor suscipit porttitor quis sit amet arcu. Nullam egestas tempor dui. Cras quis nisl eget sem laoreet consequat. Quisque auctor vitae augue in ultricies. Fusce in mattis quam. Cras in viverra nisi. Nam tincidunt id elit non interdum. Mauris lacinia magna non tempor porta.sum bla bla bla'
+  const text = [
+    'I am a software engineer who understands much more than code.',
+    'As a full-stack developer and successful entrepreneur with a strong background in accounting and cost control, I build software solutions with a deep understanding of what matters most to business: the bottom-line.',
+    'I earned my unique perspective at a tech startup.This business was acquired by a global conglomerate, where I handled our financial management and reporting.',
+    'Most recently, I sold a company I founded. As the business owner, I led teams and was involved in all areas of the business, including marketing, sales, and operations.',
+    'While I enjoyed the challenges of running a business, my heart is in creating technology that takes companies and their clients to the future.',
+    'I have very strong people skills including empathy, collaboration, and the ability to build strong relationships with my colleagues and clients that result in fruitful collaboration.',
+    'I’m also a proud father of three lovely girls. Outside of work, I love cooking and keeping my parenting skills up-to-date.',
+  ]
+
+  // Create a flat array of sentences
+  const sentences = text.flatMap((paragraph) =>
+    paragraph.split('.').filter((sentence) => sentence.trim() !== ''),
+  )
+
   const urlImage = 'https://picsum.photos/200/300'
 
   return (
@@ -16,7 +30,16 @@ export default function About() {
               <Box title={``} content={''} image={urlImage} shape="circle" />
             </div>
             <div className="col-span-5 text-sm">
-              <Box title={``} content={text} image={''} shape="rectangle" /> {/* Changed the shape to "rectangle" */}
+              <Box
+                title={``}
+                content={sentences.map((sentence, index) => (
+                  <p key={index} className="my-sentence">
+                    {sentence}.
+                  </p>
+                ))}
+                image={''}
+                shape="rectangle"
+              />
             </div>
           </div>
         </div>
