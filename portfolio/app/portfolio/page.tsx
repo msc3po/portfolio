@@ -33,7 +33,10 @@ export default function Portfolio() {
       <div className="bg-gradient-to-r from-slate-50 to-slate-100 min-h-screen flex items-center justify-center">
         <div className="h-max-full text-center w-3/4 mx-auto">
           <h1 className="p-10 py-4 text-6xl">Projects</h1>
-          <h2 className="text-lg"> Smart sentence here</h2>{' '}
+          <h2 className="text-lg">
+            {' '}
+            Here are some of the projects I have developed{' '}
+          </h2>{' '}
           <div className="grid grid-cols-4 gap-4 items-center">
             {projects.map((box, index) => (
               <Link href={box.href}>
