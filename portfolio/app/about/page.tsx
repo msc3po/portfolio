@@ -1,4 +1,5 @@
 import Box from '../components/box'
+import '../About.css' // import CSS file
 
 export default function About() {
   const text = [
