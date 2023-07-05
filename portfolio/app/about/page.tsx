@@ -31,11 +31,11 @@ export default function About() {
             size="w-full md:w-2/3"
           />
         </div>
-        <div className="grid grid-cols-12 gap-4 items-center">
-          <div className="col-start-1 col-span-3">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-4 items-center">
+          <div className="col-span-12 md:col-start-1 md:col-span-4">
             <Box title={``} content={''} image={urlImage} shape="circle" />
           </div>
-          <div className="col-start-4 col-span-9">
+          <div className="col-span-12 md:col-start-5 md:col-span-8">
             <Box
               title={``}
               content={sentences.map((sentence, index) => (
@@ -45,6 +45,7 @@ export default function About() {
               ))}
               image={''}
               shape="rectangle"
+              size="w-full lg:w-3/4"
             />
           </div>
         </div>
