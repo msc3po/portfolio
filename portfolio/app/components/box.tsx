@@ -15,11 +15,12 @@ export default function Box({
   content,
   image,
   shape = 'square',
+  size = 'w-64',
   children,
   textCentered = false,
 }: BoxProps) {
   return (
-    <div className="flex justify-center py-10">
+    <div className={`flex justify-center py-10 ${size}`}>
       <div
         className={`glass rounded-2xl border-solid border-2 border-gray-200 p-4 ${
           textCentered ? 'flex items-center justify-center' : ''
