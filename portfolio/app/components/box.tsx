@@ -11,6 +11,7 @@ export default function Box({
   content,
   image,
   shape = 'square',
+  size = 'w-64',
   textCentered = false,
 }: BoxProps) {
   return (
@@ -18,7 +19,7 @@ export default function Box({
       <div
         className={`glass rounded-2xl border-solid border-2 border-gray-200 p-4 ${
           textCentered ? 'flex items-center justify-center' : ''
-        } transition-all duration-200 ease-in-out hover:shadow-lg hover:bg-blue-100 overflow-auto ${
+        } transition-all duration-200 ease-in-out hover:shadow-lg hover:bg-blue-100 overflow-auto ${size} ${
           shape === 'circle'
             ? 'rounded-full w-64 h-64'
             : shape === 'square'
