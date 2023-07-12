@@ -1,9 +1,9 @@
 
-.my-sentence {
-  margin-bottom: 20px; 
-  text-align: justify; /* Justify text */
-  /* text-indent: 50px; Indent first line of text */
-  line-height: 1.5; /* Increase space between lines of text */
-  font-size: 1em; /* Change font size */
-  color: #333 /* Change text color */
-}
+  .my-sentence {
+    margin-bottom: 20px; 
+    text-align: justify; /* Justify text */
+    /* text-indent: 50px; Indent first line of text */
+    line-height: 1.5; /* Increase space between lines of text */
+    font-size: 1em; /* Change font size */
+    color: #333 /* Change text color */
+  }
