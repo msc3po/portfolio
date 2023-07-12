@@ -8,6 +8,7 @@ type BoxProps = {
   size?: string
   shape?: 'circle' | 'square' | 'rectangle'
   textCentered?: boolean
+  className?: string
 }
 
 export default function Box({
@@ -18,9 +19,10 @@ export default function Box({
   size = 'w-64',
   children,
   textCentered = false,
+  className = '',
 }: BoxProps) {
   return (
-    <div className={`flex justify-center py-10 ${size}`}>
+    <div className={`flex justify-center py-10 ${size} ${className}`}>
       <div
         className={`glass rounded-2xl border-solid border-2 border-gray-200 p-4 ${
           textCentered ? 'flex items-center justify-center' : ''

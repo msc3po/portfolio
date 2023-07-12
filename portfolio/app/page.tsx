@@ -11,18 +11,18 @@ export default function Home() {
   ]
 
   return (
-    <div className="bg-gradient-to-r from-slate-50 to-slate-100 min-h-screen">
+    <div className="bg-gradient-to-r from-slate-50 to-slate-100 min-h-screen flex justify-center items-center">
       <div className="h-max-full text-center">
         <h1 className="p-10 py-20">Welcome to Manel Soler Portfolio</h1>
-        <nav className="items-center grid grid-cols-2 gap-4 mx-auto w-3/4 ">
+        <nav className="grid grid-cols-2 gap-4 w-full max-w-4xl mx-auto">
           {boxes.map((box, index) => (
-            <Link href={box.href}>
+            <Link key={index} href={box.href} passHref>
               <Box
-                key={index}
                 title={box.title}
                 content={box.content}
                 image={''}
                 textCentered={true}
+                className="cursor-pointer"
               />
             </Link>
           ))}
